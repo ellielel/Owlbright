@@ -1,0 +1,136 @@
+.navbarpalette {
+  background-color: #0d343f;
+}
+a.navbar-brand{
+  font-family:"Merienda", cursive; 
+  color:#e4eed8;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@media  (min-width: 767px){
+  a.navbar-brand{
+    animation: none;
+}
+}
+
+body {
+  background: rgb(66, 135, 81);
+  background: linear-gradient(
+    0deg,
+    rgba(66, 135, 81, 1) 14%,
+    rgba(239, 179, 47, 1) 85%
+  );
+}
+
+.glowtext1 {
+  font-family: "Merienda", cursive;
+  color: #0d343f;
+  font-weight: 900;
+  font-size: 72px;
+  text-align: left;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glowtext2 {
+  font-family: "Merienda", cursive;
+  color: #0d343f;
+  font-weight: 900;
+  font-size: 72px;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glowtext3 {
+  font-family: "Merienda", cursive;
+  color: #0d343f;
+  font-weight: 900;
+  font-size: 72px;
+  text-align: right;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.carouseltext1 {
+  font-family: "Klee One", cursive;
+  color:#e4eed8;
+  font-weight: 400;
+  font-size: 28px;
+  padding-top: 8px;
+  text-align: left;
+  text-shadow: 0 0 1px #0d343f, 0 0 2px #efb32f, 0 0 8px #0d343f, 0 0 16px #efb32f;
+}
+
+.carouseltext2 {
+  font-family: "Klee One", cursive;
+  color: #e4eed8;
+  font-weight: 400;
+  font-size: 28px;
+  padding-top: 8px;
+  text-align: center;
+  text-shadow: 0 0 1px #0d343f, 0 0 2px #efb32f, 0 0 8px #0d343f, 0 0 16px #efb32f;
+}
+.carouseltext3 {
+  font-family: "Klee One", cursive;
+  color: #e4eed8;
+  font-weight: 400;
+  font-size: 28px;
+  padding-top: 8px;
+  text-align: right;
+  text-shadow: 0 0 1px #0d343f, 0 0 2px #efb32f, 0 0 8px #0d343f, 0 0 16px #efb32f;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 7px #e4eed8, 0 0 10px #e4eed8, 0 0 21px #e4eed8,
+      0 0 42px , 0 0 82px #7fac3a, 0 0 92px #2693b5, 0 0 102px #7fac3a,
+      0 0 151px #2693b5;
+  }
+  to {
+    text-shadow: 0 0 14px #e4eed8, 0 0 20px #e4eed8, 0 0 31px #e4eed8,
+      0 0 52px #7fac3a, 0 0 92px #2693b5, 0 0 102px #7fac3a, 0 0 112px #2693b5,
+      0 0 161px #7fac3a;
+  }
+}
+
+@media screen and (prefers-reduced-motion) {
+  .glowtext1,
+  .glowtext2,
+  .glowtext3 
+  {
+    animation: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 778px) {
+  .glowtext1, .glowtext2, .glowtext3 {
+    font-size: 32px;
+  }
+  .carouseltext1, .carouseltext2, .carouseltext3{
+    font-size: 14px;
+  }
+}
+@media (min-width: 779px) and (max-width: 1000px) {
+  .glowtext1, .glowtext2, .glowtext3 {
+    font-size: 48px;
+  }
+  .carouseltext1, .carouseltext2, .carouseltext3{
+    font-size: 20px;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .glowtext1, .glowtext2, .glowtext3 {
+    font-size: 56px;
+  }
+}
+
+div.col-lg-4{
+  padding: 12px;
+}
+
+/* CSS HEX 
+--xanthous: #efb32f;
+--beige: #e4eed8;
+--sea-green: #428751;
+--bondi-blue: #2693b5;
+--apple-green: #7fac3a;
+--gunmetal: #0d343f;
+--seal-brown: #431f02;
+https://coolors.co/efb32f-e4eed8-428751-2693b5-7fac3a-0d343f-431f0231f02
+*/
