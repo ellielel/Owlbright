@@ -5,20 +5,48 @@ a.navbar-brand{
   font-family:"Merienda", cursive; 
   color:#e4eed8;
   animation: glow 2s ease-in-out infinite alternate;
+  background-color:#2693b5;
+  padding: 6px;
+  margin: 0 8px 0 0;
+  border-radius: 2px 16px 2px 16px;
 }
-@media  (min-width: 767px){
+@media  (min-width: 576px){
   a.navbar-brand{
     animation: none;
 }
 }
+a.nav-link{
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #e4eed8;
+  background-color:#428751;
+  padding: 8px;
+  margin: 0 8px 0 0;
+  border-radius: 0 16px 0 16px;
+}
+a.nav-link:hover{
+  color: #0d343f;
+  background-color:#efb32f;
+}
+
+
+@media (min-width:576px) and (max-width:600px){
+  a.nav-link{
+  font-size: 14px;
+}
+}
+
+/*
+body {
+  background: rgb(239,179,47);
+background: linear-gradient(180deg, rgba(239,179,47,1) 0%, rgba(38,147,181,1) 80%, rgba(66,135,81,1) 100%);
+}
+*/
+
 
 body {
-  background: rgb(66, 135, 81);
-  background: linear-gradient(
-    0deg,
-    rgba(66, 135, 81, 1) 14%,
-    rgba(239, 179, 47, 1) 85%
-  );
+  background: rgb(38,147,181);
+background: linear-gradient(180deg, rgba(38,147,181,1) 1%, rgba(239,179,47,1) 55%, rgba(66,135,81,1) 90%);
 }
 
 .glowtext1 {
@@ -49,9 +77,9 @@ body {
 }
 
 .carouseltext1 {
-  font-family: "Klee One", cursive;
+  font-family: "Raleway", sans-serif;
   color:#e4eed8;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 28px;
   padding-top: 8px;
   text-align: left;
@@ -59,18 +87,18 @@ body {
 }
 
 .carouseltext2 {
-  font-family: "Klee One", cursive;
+  font-family: "Raleway", sans-serif;
   color: #e4eed8;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 28px;
   padding-top: 8px;
   text-align: center;
   text-shadow: 0 0 1px #0d343f, 0 0 2px #efb32f, 0 0 8px #0d343f, 0 0 16px #efb32f;
 }
 .carouseltext3 {
-  font-family: "Klee One", cursive;
+  font-family: "Raleway", sans-serif;
   color: #e4eed8;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 28px;
   padding-top: 8px;
   text-align: right;
@@ -98,14 +126,24 @@ body {
     animation: none;
   }
 }
-@media (min-width: 577px) and (max-width: 778px) {
+
+@media (min-width:576px)and (max-width:610px){
+  .glowtext1, .glowtext2, .glowtext3 {
+    font-size: 28px;
+  }
+  .carouseltext1, .carouseltext2, .carouseltext3{
+    font-size: 0;
+  }
+}
+@media (min-width: 611px) and (max-width: 778px) {
   .glowtext1, .glowtext2, .glowtext3 {
     font-size: 32px;
   }
   .carouseltext1, .carouseltext2, .carouseltext3{
-    font-size: 14px;
+    font-size: 18px;
   }
 }
+
 @media (min-width: 779px) and (max-width: 1000px) {
   .glowtext1, .glowtext2, .glowtext3 {
     font-size: 48px;
