@@ -1,9 +1,21 @@
-.navbarpalette {
+.bg-dark {
   background-color: #0d343f;
 }
+
+.navbar-toggler {
+  color: #e4eed8 !important;
+  border-color: #e4eed8 !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23e4eed8' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+
+
 a.navbar-brand{
   font-family:"Merienda", cursive; 
-  color:#e4eed8;
+  color:#e4eed8 !important;
   animation: glow 2s ease-in-out infinite alternate;
   background-color:#2693b5;
   padding: 6px;
@@ -18,23 +30,37 @@ a.navbar-brand{
 a.nav-link{
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  color: #e4eed8;
+  color: #e4eed8 !important;
   background-color:#428751;
   padding: 8px;
   margin: 0 8px 0 0;
   border-radius: 0 16px 0 16px;
 }
 a.nav-link:hover{
-  color: #0d343f;
+  color: #0d343f !important;
   background-color:#efb32f;
+}
+@media (max-width: 576px) {
+  .nav-link-custom {
+    background-color: transparent !important;
+  }
 }
 
 
 @media (min-width:576px) and (max-width:600px){
   a.nav-link{
-  font-size: 14px;
+  font-size: 12px;
 }
 }
+
+@media (max-width: 576px) {
+  .nav-link-custom::focus {
+    color: orange !important;
+  }
+}
+
+
+
 
 /*
 body {
@@ -45,7 +71,7 @@ background: linear-gradient(180deg, rgba(239,179,47,1) 0%, rgba(38,147,181,1) 80
 
 
 body {
-  background: rgb(38,147,181);
+background: rgb(38,147,181);
 background: linear-gradient(180deg, rgba(38,147,181,1) 1%, rgba(239,179,47,1) 55%, rgba(66,135,81,1) 90%);
 }
 
